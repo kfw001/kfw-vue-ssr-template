@@ -1,0 +1,33 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "label": "Author"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "label": "default title",
+      "default": ""
+    },
+    "port": {
+        "type": "string",
+        "required": true,
+        "label": "your project app port",
+        "default": "8080"
+    }
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev.{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev.{{/inPlace}}"
+}
